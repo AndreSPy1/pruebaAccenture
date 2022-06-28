@@ -1,0 +1,16 @@
+package com.accenture.pruebaAccenture.payload;
+
+import com.accenture.pruebaAccenture.dto.AlbumDTO;
+import com.accenture.pruebaAccenture.dto.UserDTO;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter @Setter @NoArgsConstructor @ToString
+public class AlbumUserPermissionRequestBody {
+    private AlbumDTO album;
+    private UserDTO user;
+    private boolean reading;
+    private boolean writing;
+}
